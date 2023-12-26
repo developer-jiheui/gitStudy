@@ -1,0 +1,23 @@
+//DB -Oracle 18c express editor
+Jdk - 17
+웹 표준기술 (프론트 :html css js jquery, react- maybe)
+JSP
+Spring Framework
+	-legacy
+	- boot + thymeleaf
+배포 : 서버(AWS) + Docker (배포하는 형식) 
+
+Today 
+Git <3
+
+
+# github.com에서 할 일
+personal access token 받아 놓기
+#github -> settings -> developer Settings -> generate new token
+created token : 
+
+classic : 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
+fine grained : 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
+
+local -> remote : push
+
