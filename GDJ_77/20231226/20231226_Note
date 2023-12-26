@@ -19,5 +19,18 @@ created token :
 classic : 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
 fine grained : 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
 
-local -> remote : push
+local -> remote : push 할때 사용
 
+
+#Git
+
+#1. 리눅스 기반
+#2. 명령어 git bash 로 실행
+#3. 모든 명령어는 git오로 시작함
+#4. 모든 명령어는 대소문자를 구분함
+#5. 명령어 구분은 공백으로 함(공백의 개수는 상관없음)
+    //local repository
+    1. 로컬 저장소
+    2. 사용자의 컴퓨터에 만드는 git 저장소
+    3. directory에서 우클릭 -> git bash 실행 누르면 bash 열림
+    
