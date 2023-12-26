@@ -118,6 +118,13 @@ local -> remote : push 할때 사용
     https://www.freecodecamp.org/korean/news/how-to-delete-a-git-branch-both-locally-and-remotely/
 
     
+---------------------------------
 
+    Remote Repository Clone (전체 내려받기)
+        -> git clone <url>
+
+        #옛날 버전과 최신버전이 존재하면 옛날것으로 돌아가는건 안된다
+        # REMOTE에 LOCAL에 업데이트 되어있지않은 정보가 있으면 먼저 내려받고 (Pull) 그 이후에 push 할수 있다
+        
     
 
