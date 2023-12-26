@@ -1,3 +1,0 @@
-Open the Test.txt with vi mode
-Now we are testing if the text file will be saved
-
