@@ -30,7 +30,94 @@ local -> remote : push 할때 사용
 #4. 모든 명령어는 대소문자를 구분함
 #5. 명령어 구분은 공백으로 함(공백의 개수는 상관없음)
     //local repository
-    1. 로컬 저장소
-    2. 사용자의 컴퓨터에 만드는 git 저장소
-    3. directory에서 우클릭 -> git bash 실행 누르면 bash 열림
+        1. 로컬 저장소
+        2. 사용자의 컴퓨터에 만드는 git 저장소
+        3. directory에서 우클릭 -> 터미널에서 보기-> git bash 실행 누르면 bash 열림
+        4. .git 숨김 폴더 확인 (참고로 linux에서 마침표'.'로 시작하는건 숨김이라는 의미)
+
+    //local repository에 파일 추가하기
+        1. 임의의 파일 추가하기
+            -> touch 파일명(test.txt)
+        2. 임의의 파일 열기
+            -> vi test.txt -> (A나 I, O눌러서 입력모드 들어갈때 커서위치 확인하기)
+            #나올때 esc누르거나 :q, :q!
+            #A를 누르면 space 후에 커서
+            #I는 그자리 그대로 편집
+            #O는 new Line 후 편집
+
+            **저장하고 나오려면 :모드 또는 last line 모드**
+            : 빠져나가기 q 닫기 !강제
+            : w 저장(쓰기) q 닫기
+
+        
+    //local repository 상태보기
+    -> git status
     
+    //local repository  staging the new file to branch 
+    -> git add <파일명>
+        **warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+        #LF 와 CRLF는 windows 와 리눅스의 new line 차이
+         - window 는 CRLF linux & unix는 LF
+
+    //local repository commit 
+    ->git commit test.txt
+        -> commit message 작성을 위해서 vim이 자동으로 열림
+        -> commit message 작성하고 저장하고 종료하기 
+
+        -> $ git commit -m "first commit for the Goodee program"
+            Author identity unknown
+
+            *** Please tell me who you are.
+
+            Run
+
+            git config --global user.email "you@example.com"
+            git config --global user.name "Your Name"
+
+            to set your account's default identity.'
+            Omit --global to set the identity only in this repository.
+
+            #""는 white space없으면 굳이 넣을 필요없다 
+
+    ->$ git status
+        On branch master
+        nothing to commit, working tree clean
+        # DONE everything in Local work space 로컬 레파지토리 작업 마무리!
+
+
+        # .gitignore : list of the files that should be hidden in the git
+
+------------------------------------------------------------------------
+
+    Remote 환경 구성
+
+    1. Github에서 repository만들기
+        -> Create repository -> public -> 옵션 체크없이 생성
+        -> copy the url of repository ; https://github.com/developer-jiheui/gitStudy.git
+    2. local repository에 remote repository 등록하기
+        -> gir remote add origin <url>
+
+    ##유용한 바로가기 키!
+        1. 복사 ctrl + insert
+        2. 붙이기 : shift + insert 또는 마우스 우클릭
+        3. 강제 종료 : ctrl + C
+
+    3. local repository를 remote repository로 올리기
+        -> git push origin master
+
+
+----------------------------
+
+    Remote Repository 지우기
+
+    - github setting -> danger zone -> delete this repositor -> yes
+
+    ******Remote on Terminal*****
+    https://stackoverflow.com/questions/6648995/how-to-create-a-remote-git-repository-from-a-local-one
+
+    https://www.freecodecamp.org/korean/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+
+    
+
+    
+
